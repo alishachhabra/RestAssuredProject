@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite hostname="ICPL-TEST01" name="test.RestTest2" tests="1" failures="0" timestamp="7 May 2019 07:31:27 GMT" time="2.61" errors="0">
+  <testcase name="getReq" time="2.581" classname="test.RestTest2"/>
+</testsuite>
