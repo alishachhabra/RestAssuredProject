@@ -11,10 +11,11 @@ import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import junit.framework.Assert;
+import listeners.Retry;
 
 public class RestTest2 {
 	
-	@Test(priority =1)
+	@Test(priority =1, retryAnalyzer = Retry.class)
 	public void getReq()
 	{
 		RestAssured.baseURI = "http://dummy.restapiexample.com/api/v1";
@@ -27,7 +28,7 @@ public class RestTest2 {
 		System.out.println("Response Body is =>  " + responseBody);
 	}
 	
-	@Test(priority =2)
+	@Test(priority =2, retryAnalyzer = Retry.class)
 	public void getReq2()
 	{
 		int id = 38588;
@@ -42,7 +43,7 @@ public class RestTest2 {
 	
 	
 	@SuppressWarnings("unchecked")
-	@Test(priority =3)
+	@Test(priority =3, retryAnalyzer = Retry.class)
 	public void postReq()
 	{
 		RestAssured.baseURI = "http://dummy.restapiexample.com/api/v1";
@@ -76,7 +77,7 @@ public class RestTest2 {
 	
 	
 	@SuppressWarnings("unchecked")
-	@Test(priority =4)
+	@Test(priority =4, retryAnalyzer = Retry.class)
 	public void putReq()
 	{
 		 RestAssured.baseURI = "http://dummy.restapiexample.com/api/v1";
@@ -99,7 +100,7 @@ public class RestTest2 {
 
 	
 	
-	@Test(priority =5)
+	@Test(priority =5, retryAnalyzer = Retry.class)
 	public void deleteReq()
 	{
 		 RestAssured.baseURI = "http://dummy.restapiexample.com/api/v1";
