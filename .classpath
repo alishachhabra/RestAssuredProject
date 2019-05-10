@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" output="target/classes" path="src/main/java">
+		<attributes>
+			<attribute name="optional" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry excluding="**" kind="src" output="target/classes" path="src/main/resources">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" output="target/test-classes" path="src/test/java">
+		<attributes>
+			<attribute name="optional" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry excluding="**" kind="src" output="target/test-classes" path="src/test/resources">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/puja/json-simple-1.1.jar/json-simple-1.1.jar"/>
+	<classpathentry kind="lib" path="D:/puja/jar_files/geronimo-osgi-locator-1.0.jar"/>
+	<classpathentry kind="lib" path="D:/puja/jar_files/org.apache.aries.javax.jax.rs-api-1.0.4.jar"/>
+	<classpathentry kind="lib" path="D:/puja/java-json.jar/java-json.jar"/>
+	<classpathentry kind="lib" path="D:/puja/javax.ws.rs.jar/javax.ws.rs.jar"/>
+	<classpathentry kind="lib" path="D:/puja/New folder/jar_files/commons-codec-1.9.jar"/>
+	<classpathentry kind="lib" path="D:/puja/New folder/jar_files/commons-lang3-3.4.jar"/>
+	<classpathentry kind="lib" path="D:/puja/New folder/jar_files/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="D:/puja/New folder/jar_files/groovy-2.4.6.jar"/>
+	<classpathentry kind="lib" path="D:/puja/New folder/jar_files/groovy-json-2.4.6.jar"/>
+	<classpathentry kind="lib" path="D:/puja/New folder/jar_files/groovy-xml-2.4.6.jar"/>
+	<classpathentry kind="lib" path="D:/puja/New folder/jar_files/hamcrest-core-1.3.jar"/>
+	<classpathentry kind="lib" path="D:/puja/New folder/jar_files/hamcrest-library-1.3.jar"/>
+	<classpathentry kind="lib" path="D:/puja/New folder/jar_files/httpclient-4.5.2.jar"/>
+	<classpathentry kind="lib" path="D:/puja/New folder/jar_files/httpcore-4.4.4.jar"/>
+	<classpathentry kind="lib" path="D:/puja/New folder/jar_files/httpmime-4.5.1.jar"/>
+	<classpathentry kind="lib" path="D:/puja/New folder/jar_files/json-path-3.0.0.jar"/>
+	<classpathentry kind="lib" path="D:/puja/New folder/jar_files/rest-assured-3.0.0.jar"/>
+	<classpathentry kind="lib" path="D:/puja/New folder/jar_files/rest-assured-common-3.0.0.jar"/>
+	<classpathentry kind="lib" path="D:/puja/New folder/jar_files/tagsoup-1.2.1.jar"/>
+	<classpathentry kind="lib" path="D:/puja/New folder/jar_files/xml-path-3.0.0.jar"/>
+	<classpathentry kind="lib" path="D:/puja/testng-6.0.jar/testng-6.0.jar"/>
+	<classpathentry kind="output" path="target/classes"/>
+</classpath>
