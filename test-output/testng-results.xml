@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite1" duration-ms="2610" started-at="2019-05-07T13:01:25Z" finished-at="2019-05-07T13:01:27Z">
+    <groups>
+    </groups>
+    <test name="Regression1" duration-ms="2610" started-at="2019-05-07T13:01:25Z" finished-at="2019-05-07T13:01:27Z">
+      <class name="test.RestTest2">
+        <test-method status="PASS" signature="getReq()" name="getReq" duration-ms="2581" started-at="2019-05-07T13:01:25Z" finished-at="2019-05-07T13:01:27Z">
+        </test-method>
+      </class>
+    </test>
+  </suite>
+</testng-results>
