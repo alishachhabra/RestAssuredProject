@@ -5,6 +5,7 @@ import javax.xml.validation.Validator;
 import org.json.simple.JSONObject;
 import org.testng.annotations.Test;
 
+import customAnnotation.RetryCountIfFailed;
 import io.restassured.RestAssured;
 import io.restassured.http.Method;
 import io.restassured.path.json.JsonPath;
@@ -16,6 +17,7 @@ import listeners.Retry;
 public class RestTest2 {
 	
 	@Test(priority =1, retryAnalyzer = Retry.class)
+	@RetryCountIfFailed(1)
 	public void getReq()
 	{
 		RestAssured.baseURI = "http://dummy.restapiexample.com/api/v1";
@@ -29,6 +31,7 @@ public class RestTest2 {
 	}
 	
 	@Test(priority =2, retryAnalyzer = Retry.class)
+	@RetryCountIfFailed(1)
 	public void getReq2()
 	{
 		int id = 38588;
@@ -44,6 +47,7 @@ public class RestTest2 {
 	
 	@SuppressWarnings("unchecked")
 	@Test(priority =3, retryAnalyzer = Retry.class)
+	@RetryCountIfFailed(2)
 	public void postReq()
 	{
 		RestAssured.baseURI = "http://dummy.restapiexample.com/api/v1";
@@ -78,6 +82,7 @@ public class RestTest2 {
 	
 	@SuppressWarnings("unchecked")
 	@Test(priority =4, retryAnalyzer = Retry.class)
+	@RetryCountIfFailed(1)
 	public void putReq()
 	{
 		 RestAssured.baseURI = "http://dummy.restapiexample.com/api/v1";
@@ -101,6 +106,7 @@ public class RestTest2 {
 	
 	
 	@Test(priority =5, retryAnalyzer = Retry.class)
+	@RetryCountIfFailed(1)
 	public void deleteReq()
 	{
 		 RestAssured.baseURI = "http://dummy.restapiexample.com/api/v1";

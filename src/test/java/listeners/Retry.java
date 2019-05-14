@@ -3,11 +3,13 @@ package listeners;
 import org.testng.IRetryAnalyzer;
 import org.testng.ITestResult;
 
+import customAnnotation.RetryCountIfFailed;
+
 public class Retry implements IRetryAnalyzer {
 		 
 	    private int count = 0;
 	    private static int maxTry = 3;
-	 
+	 /*
 	    @Override
 	    public boolean retry(ITestResult iTestResult) {
 	        if (!iTestResult.isSuccess()) {                      //Check if test not succeed
@@ -22,6 +24,21 @@ public class Retry implements IRetryAnalyzer {
 	            iTestResult.setStatus(ITestResult.SUCCESS);      //If test passes, TestNG marks it as passed
 	        }
 	        return false;
-	    }
+	    }*/
+	    
+	    @Override
+		public boolean retry(ITestResult result) {
+
+			// check if the test method had RetryCountIfFailed annotation
+			RetryCountIfFailed annotation = result.getMethod().getConstructorOrMethod().getMethod()
+					.getAnnotation(RetryCountIfFailed.class);
+			// based on the value of annotation see if test needs to be rerun
+			if((annotation != null) && (count < annotation.value()))
+			{
+				count++;
+				return true;
+			}
+			return false;
+		}
 	 
 	}
